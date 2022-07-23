@@ -1,0 +1,40 @@
+@import "./color.scss";
+
+// 背景色
+@mixin bg_color {
+  background-color: $light-bg-color;
+
+  [class="light"] & {
+    background-color: $light-bg-color;
+  }
+
+  [class="dark"] & {
+    background-color: $dark-bg-color;
+  }
+}
+
+// 文字颜色
+@mixin text_color {
+  color: $light-bg-color;
+
+  [class="light"] & {
+    color: $dark-bg-color;
+  }
+
+  [class="dark"] & {
+    color: $light-bg-color;
+  }
+}
+
+// hover的背景色
+@mixin hover_bg_color {
+  background: $hover-default-color;
+
+  [class="light"] & {
+    background: $hover-default-color;
+  }
+
+  [class="dark"] & {
+    background: $hover-dark-color;
+  }
+}

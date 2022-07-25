@@ -15,9 +15,8 @@ service.interceptors.request.use(
     // console.log("请求拦截器", config);
     // 在发送请求之前给 header 设置 token
     if (!config.url.includes("/userlogin")) {
-      config.headers.authorization = localStorage.getItem(
-        process.env.VUE_APP_TOKEN_NAME
-      );
+      config.headers[process.env.VUE_APP_AJAX_HEADER_AUTH_NAME] =
+        localStorage.getItem(process.env.VUE_APP_TOKEN_NAME);
     }
     return config;
   },

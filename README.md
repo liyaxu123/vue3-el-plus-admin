@@ -1,11 +1,5 @@
 # admin
 
-## 接口地址
-> baseURL: http://152.136.185.210:5000
-
-## 接口文档地址
-> https://documenter.getpostman.com/view/12387168/TzzDKb12
-
 ## 注意
 - 国际化插件：vue-i18n插件在vue3中使用，需要安装9版本的
 地址：https://vue-i18n.intlify.dev/
